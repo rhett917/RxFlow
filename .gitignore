@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+vendor/
+*.lock
+package-lock.json
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Logs
+logs/*.log
+*.log
+
+# Uploads
+public/uploads/*
+!public/uploads/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+cache/
+tmp/
+
+# Sensitive data
+data/prescriptions/*
+!data/prescriptions/.gitkeep
+credentials/
+*.pem
+*.key
+
+# Build
+dist/
+build/
