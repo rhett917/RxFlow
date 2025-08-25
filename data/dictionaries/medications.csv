@@ -1,0 +1,27 @@
+name,generic_name,min_dose,max_dose,unit,category,controlled
+Amoxicilina,Amoxicilina,250,1000,mg,Antibiótico,0
+Azitromicina,Azitromicina,250,500,mg,Antibiótico,0
+Dipirona,Metamizol,500,1000,mg,Analgésico,0
+Paracetamol,Paracetamol,500,1000,mg,Analgésico,0
+Ibuprofeno,Ibuprofeno,200,800,mg,Anti-inflamatório,0
+Diclofenaco,Diclofenaco,50,150,mg,Anti-inflamatório,0
+Omeprazol,Omeprazol,20,40,mg,Antiácido,0
+Pantoprazol,Pantoprazol,20,40,mg,Antiácido,0
+Losartana,Losartana,25,100,mg,Anti-hipertensivo,0
+Atenolol,Atenolol,25,100,mg,Anti-hipertensivo,0
+Metformina,Metformina,500,2000,mg,Antidiabético,0
+Glibenclamida,Glibenclamida,2.5,20,mg,Antidiabético,0
+Sinvastatina,Sinvastatina,10,80,mg,Hipolipemiante,0
+Atorvastatina,Atorvastatina,10,80,mg,Hipolipemiante,0
+Sertralina,Sertralina,25,200,mg,Antidepressivo,1
+Fluoxetina,Fluoxetina,20,80,mg,Antidepressivo,1
+Rivotril,Clonazepam,0.5,4,mg,Ansiolítico,1
+Diazepam,Diazepam,5,40,mg,Ansiolítico,1
+Prednisona,Prednisona,5,60,mg,Corticoide,0
+Dexametasona,Dexametasona,0.5,16,mg,Corticoide,0
+Levotiroxina,Levotiroxina,25,200,mcg,Hormônio,0
+Vitamina D,Colecalciferol,1000,5000,UI,Vitamina,0
+Complexo B,Complexo B,1,2,comp,Vitamina,0
+Ácido Fólico,Ácido Fólico,5,15,mg,Vitamina,0
+Loratadina,Loratadina,10,10,mg,Antialérgico,0
+Cetirizina,Cetirizina,10,10,mg,Antialérgico,0

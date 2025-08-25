@@ -9,6 +9,25 @@ echo "📋 Checking prerequisites..."
 command -v docker >/dev/null 2>&1 || { echo "❌ Docker is required but not installed. Aborting." >&2; exit 1; }
 command -v docker-compose >/dev/null 2>&1 || { echo "❌ Docker Compose is required but not installed. Aborting." >&2; exit 1; }
 
+# Install R if not present
+if ! command -v R >/dev/null 2>&1; then
+    echo "📦 Installing R..."
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        # Ubuntu/Debian
+        sudo apt-get update
+        sudo apt-get install -y r-base r-base-dev
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        # macOS
+        brew install r
+    else
+        echo "⚠️  Please install R manually for your system"
+    fi
+fi
+
+# Install R packages
+echo "📚 Installing R packages..."
+sudo R -e "install.packages(c('jsonlite', 'stringr', 'dplyr', 'stringdist'), repos='https://cloud.r-project.org/', dependencies=TRUE)"
+
 # Create necessary directories
 echo "📁 Creating directories..."
 mkdir -p data/prescriptions/{typed,handwritten}
